@@ -1,8 +1,9 @@
 <?php
-    // 自分の得意な言語で
-    // Let's チャレンジ！！
+function piyo(&$a) {
+  return ++$a;
+}
+$b = 1;
 
-    $input_lines = fgets(STDIN);
-    $s = $input_lines * ($input_lines - 1) / 2;
-    print_r($s);
+echo piyo($b) ."<br />";
+echo $b ."<br />";
 ?>
