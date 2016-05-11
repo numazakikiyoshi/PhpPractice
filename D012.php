@@ -1,8 +1,9 @@
 <?php
     // 自分の得意な言語で
     // Let's チャレンジ！！
-
     $input_lines = fgets(STDIN);
-    $s = $input_lines * ($input_lines - 1) / 2;
-    print_r($s);
+    if($input_lines<0){
+        $input_lines=-1*$input_lines;
+    }
+    print_r($input_lines);
 ?>
